@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is my personal portfolio website.">
+    <meta name="keywords" content="Fellipe, Teles, Portfolio, software, development, web">
+    <meta name="author" content="Fellipe Cornehl Teles De Camargo">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/script/script.js"></script>
+    <title>Personal Portfolio - Fellipe Teles</title>
+  </head>
+
+  <body>
+    <h1>Fellipe Teles</h1>
+    <header>
+      <div class="container">
+        <div class="typewriter">
+          <h2 id="main-title"><span>F</span>ellipe<span>_</span><span>T</span>eles <span>()</span><span
+              class="blinking-cursor">|</span></h2>
+        </div>
+
+        <hr>
+        <nav>
+          <ul id="sideMenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="bi bi-chevron-bar-right" onclick="closeMenu()"></i>
+          </ul>
+          <i class="bi bi-chevron-bar-left" onclick="openMenu()"></i>
+        </nav>
+    </header>
+    <!-- ---------- About ---------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="assets/images/fellipe_pfp2.jpg" alt="">
+          </div>
+          <div class="about-col-2">
+            <h2 class="sub-title">About Me</h2>
+            <hr>
+            <br>
+            <div>
+              <p class="about-text">Hello, I'm Fellipe, a passionate software developer with an interest in crafting and
+                being a part of
+                efficient, helpful solutions. Though I may not have many years of experience I tend to research and keep
+                up to date with newer technologies to provide the best service. As technology moves fast, we should too.
+              </p>
+              <br>
+            </div>
+            <div>
+              <p class="about-text">My expertise lies primarily in C# (C Sharp), where I have developed a solid and
+                confident foundation, a
+                powerful language capable of developing robust applications across the board, being it local on your
+                machine, for the web, mobile and cross-platform apps.</p>
+              <br>
+            </div>
+            <div class="about-text">
+              What drives me is the opportunity to leverage technology to make a positive impact. Whether it's
+              streamlining processes, enhancing user experiences, or solving complex problems, I'm dedicated to
+              delivering robust solutions that exceed expectations.
+            </div>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+              <p class="tab-links" onclick="openTab('experience')">Experience</p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Software</span><br>
+                  <p>
+                    - Software development/App development<br>- C#, .NET, Entity Framework Core,
+                    MVC, Windows Forms, WPF
+                  </p>
+                  <br>
+                </li>
+                <li><span>Databases</span><br>
+                  <p>
+                    - SQL, PostgreSQL, SQLite
+                  </p>
+                  <br>
+                </li>
+                <li><span>Web</span><br>
+                  <p>
+                    - HTML, CSS, JavaScript
+                  </p>
+                  <br>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Freelance</span>
+                  <p>
+                    - I made significant contributions to
+                    the development of an online course platform by implementing
+                    new endpoints with full CRUD (Create, Read, Update, Delete) functionality.<br><br>
+                    - Maintenance on an API that sends emails using the smtp client.<br><br>
+                    - Implemented new endpoints in an authentication API having knowledge in the Microsoft Identity
+                    package. <br><br>
+                  </p>
+                </li>
+                <li><span>Windows Forms</span><br>
+                  <p>
+                    - Development of a Stock management/Service management Windows Forms app
+                    for a motorcycle shop, for internal company use at
+                    <span>
+                      <a href="https://www.facebook.com/batatamotosapiai/?locale=pt_BR" target="_blank">Batata Motos
+                        Ltda.</a>
+                    </span>
+                    Apiaí - São
+                    Paulo,
+                    Brasil
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>George Brown College</span> (2023 - 2026)<br>
+                  <p>
+                    - Enrolled in Computer Programming and Analysis
+                  </p>
+                  <br>
+                </li>
+                <li><span>Self Study</span>
+                  <br>
+                  <p>
+                    - Self study and experience gained from projects to further deepen my knowledge
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------------------- -->
+
+    <!-- ---------- Services ---------- -->
+    <div id="services">
+      <div class="container">
+        <h2 class="sub-title">Services</h2>
+        <hr>
+        <div class="service-list">
+          <div>
+            <i class="bi bi-code"></i>
+            <h3>Software Development</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, eaque?</p>
+          </div>
+          <div>
+            <i class="bi bi-window"></i>
+            <h3>App Development</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, architecto!</p>
+          </div>
+          <div>
+            <i class="bi bi-filetype-html"></i>
+            <h3>Web Development</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, eaque?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------- Portfolio ---------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h2 class="sub-title">Portfolio</h2>
+        <hr>
+        <div class="work-list">
+          <div class="work">
+            <img src="assets/images/project-batata.png" alt="">
+            <div class="layer">
+              <h3>Batata Motos - Sistema Interno</h3>
+              <p>Internal stock management/service management system</p>
+              <a href="portfolio.html"><i class="bi bi-box-arrow-up-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------- Contact ---------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h2 class="sub-title">Contact</h2>
+            <hr>
+            <p>
+              <i class="bi bi-send"></i> fellipeteles.dev@outlook.com
+            </p>
+            <p><a href="https://www.linkedin.com/in/fellipe-c-t-de-camargo-17a015281/" target="_blank"><i
+                  class="bi bi-linkedin"></i></a>Fellipe Teles</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="foot-container">
+      <footer>
+        <p>Copyright <span>&copy;</span> Fellipe C.T De Camargo</p>
+      </footer>
+    </div>
+
+  </body>
+
+</html>
