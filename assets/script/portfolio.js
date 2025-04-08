@@ -11,14 +11,13 @@ window.addEventListener("resize", () => {
   // if (window.innerHeight < 550) {
   //   title.style.marginTop = "100%";
   // }
-
 });
 
-scrollContainer.addEventListener("wheel", (evt) => {
-  evt.preventDefault();
-  scrollContainer.scrollLeft += evt.deltaY;
-  scrollContainer.style.scrollBehavior = "auto";
-});
+// scrollContainer.addEventListener("wheel", (evt) => {
+//   evt.preventDefault();
+//   scrollContainer.scrollLeft += evt.deltaY;
+//   scrollContainer.style.scrollBehavior = "auto";
+// });
 
 nextBtn.addEventListener("click", () => {
   scrollContainer.style.scrollBehavior = "smooth";

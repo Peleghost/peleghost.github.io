@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
 
 * {
   margin: 0;
@@ -51,7 +51,6 @@ header {
 }
 
 @keyframes blink {
-
   from,
   to {
     color: transparent;
@@ -65,7 +64,6 @@ header {
 hr {
   color: #00ff5e;
 }
-
 
 nav {
   background: #262626;
@@ -93,7 +91,7 @@ nav ul li a {
 }
 
 nav ul li a::after {
-  content: '';
+  content: "";
   width: 0;
   height: 3px;
   background: #00ff5e;
@@ -166,7 +164,7 @@ nav ul li a:hover::after {
 }
 
 .tab-links::after {
-  content: '';
+  content: "";
   width: 0;
   height: 3px;
   background: #00ff5e;
@@ -179,7 +177,6 @@ nav ul li a:hover::after {
 .tab-links.active-link::after {
   width: 100%;
 }
-
 
 .tab-contents {
   display: none;
@@ -257,10 +254,21 @@ li::marker {
   padding: 50px 0;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
 .work-list {
   display: grid;
   justify-content: center;
   margin-top: 80px;
+}
+
+.work-list h3 {
+  text-align: center;
+  margin: 20px;
 }
 
 .work {
@@ -332,7 +340,7 @@ li::marker {
 
 .contact-left a {
   color: #00ff5e;
-  font-size: 20px
+  font-size: 20px;
 }
 
 .contact-left p i {
