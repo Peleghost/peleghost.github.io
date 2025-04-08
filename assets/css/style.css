@@ -275,6 +275,7 @@ li::marker {
   position: relative;
   overflow: hidden;
   border-radius: 15px;
+  margin: 30px;
 }
 
 .work img {
