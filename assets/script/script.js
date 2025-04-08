@@ -21,3 +21,33 @@ function closeMenu() {
   const sideMenu = document.getElementById("sideMenu");
   sideMenu.style.right = "-160px";
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const contactForm = document.getElementById("contactForm");
+  const responseMessage = document.getElementById("responseMessage");
+
+  contactForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (name && email && message) {
+      // Simulate form submission
+      responseMessage.textContent = "Thank you! Your message has been sent.";
+      responseMessage.style.color = "green";
+
+      // Clear the form
+      contactForm.reset();
+    } else {
+      responseMessage.textContent = "Please fill out all fields.";
+      responseMessage.style.color = "red";
+    }
+
+    // Hide message after 3 seconds
+    setTimeout(() => {
+      responseMessage.textContent = "";
+    }, 3000);
+  });
+});

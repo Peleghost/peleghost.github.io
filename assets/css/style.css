@@ -355,6 +355,42 @@ li::marker {
   font-size: 25px;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  max-width: 500px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #04aa6d;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  max-width: 500px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
 .foot-container {
   width: 100%;
   text-align: center;
